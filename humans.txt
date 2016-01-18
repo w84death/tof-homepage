@@ -1,0 +1,9 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+
+Krzysztof Jankowski kj@p1x.in
+
+# TECHNOLOGY COLOPHON
+
+    PHP, HTML5, CSS3

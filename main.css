@@ -1,0 +1,139 @@
+/* boilerplate */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin:0;
+    padding:0;}
+
+html,
+button,
+input,
+select,
+textarea { color: #fff; }
+
+*::-moz-selection { background: #be2633; color: #fff; text-shadow: none; }
+*::selection { background: #be2633; color: #fff; text-shadow: none; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #be2633; margin: 1em 0; padding: 0; }
+
+a:link,
+a:active,
+a:visited {color:#be2633;}
+a:hover {color:#fff;}
+
+/* layout_ */
+
+body {width:1200px; margin:0 auto 10em;
+    background-color:#000; color:#fff;}
+
+ul,li {margin:0; padding:0; list-style:none;}
+a:link, a:visited, a:active {text-decoration:underline;}
+
+header {min-height:800px; padding-top:580px; text-align: center;
+    background: url(/assets/monitor_hz.gif), url(/assets/background.jpg) black;
+    background-repeat: no-repeat, no-repeat;
+    background-position:408px 189px, 0 0;}
+
+header p {margin:2em 0;}
+header h1 {margin-bottom:3em;}
+
+article,
+.video {width:900px; margin:5em auto;
+    text-align: center;}
+
+article h3,
+article h4,
+article p,
+article ul {width:500px; margin:1em auto;
+    text-align: left;}
+
+article ul ul {margin:0 0 0 2em;}
+article ul li{list-style:square;}
+
+.systems {width:auto; text-align:center;}
+.systems li {display:inline-block; width:100px; height:100px;
+    text-align: center; vertical-align: top; line-height: 100px;
+    background-color: #656d71; border:2px solid #be2633; color: #be2633;}
+
+.legend li {display:inline-block; line-height: 24px; font-size:0.8em; border-left: 24px solid #be2633;
+  padding-left:24px; list-style: none;}
+.legend li +li {margin-left:24px;}
+.systems li.unofficial {background-color: #656d71; border:2px solid #eb8931; color: #eb8931;}
+.legend li.unofficial {border-color: #eb8931;}
+
+.systems li a {display:block; width:100%; height:100%; text-decoration:none;
+    text-shadow:-1px -1px 0 #000; color:#fff;}
+.systems li:hover {background-color:#be2633;}
+.systems li.unofficial:hover {background-color:#eb8931;}
+.systems li+li {margin-left:1em;}
+
+.team li {display:inline-block; width:40%; vertical-align:top; margin-bottom:10%;}
+.team li:nth-child(2n){margin-left:15%;}
+.team li img {border:2px solid #fff;}
+
+.screenshot { width:1200px; height:160px; background-position:0 0;
+    -webkit-animation: intro-anim-down 15s linear infinite;
+        animation: screenshot-anim-down 15s linear infinite;}
+.screenshot.up {
+    -webkit-animation: intro-anim-up 15s linear infinite;
+        animation: screenshot-anim-up 15s linear infinite;
+}
+
+.screenshot,
+ .team li img,
+ .systems li {border-radius: 18px;}
+
+
+/* typography_ */
+
+@font-face {
+    font-family: 'courier_primeregular';
+    src: url('/assets/courier_prime-webfont.eot');
+    src: url('/assets/courier_prime-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/courier_prime-webfont.woff2') format('woff2'),
+         url('/assets/courier_prime-webfont.woff') format('woff'),
+         url('/assets/courier_prime-webfont.ttf') format('truetype'),
+         url('/assets/courier_prime-webfont.svg#courier_primeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html { font-size: 1em; line-height: 1.4; font-family: 'courier_primeregular', Arial, sans-serif;
+    text-rendering: optimizeLegibility; color:#fff;}
+h1 {font-size:1.8em;}
+h2 {font-size:1.2em;}
+nav {font-size:1.2em;}
+p {font-size:1em;}
+li span {font-size: 0.8em;}
+li.hello {font-size: 2em;}
+i {font-size: 0.8em;font-weight: 100;padding-right: 0.5em;}
+
+
+/* animations_ */
+
+@-webkit-keyframes screenshot-anim-down {
+  0%   { background-position:0 0; }
+  50%  { background-position:0 -140px; }
+  100%   { background-position:0 0; }
+}
+@keyframes screenshot-anim-down {
+  0%   { background-position:0 0; }
+  50%  { background-position:0 -140px; }
+  100%   { background-position:0 0; }
+}
+
+@-webkit-keyframes screenshot-anim-up {
+  0%   { background-position:0 -140px; }
+  50%  { background-position:0 0; }
+  100%   { background-position:0 -140px; }
+}
+@keyframes screenshot-anim-up {
+  0%   { background-position:0 -140px; }
+  50%  { background-position:0 0; }
+  100%   { background-position:0 -140px; }
+}
