@@ -87,6 +87,8 @@ article ul li{list-style:square;}
  .team li img,
  .systems li {border-radius: 18px;}
 
+.screens {text-align: center;}
+.screens img {width:45%;}
 
 /* typography_ */
 
